@@ -4,6 +4,7 @@ dependencies {
     implementation 'com.github.XYOracleNetwork:sdk-objectmodel-kotlin:0.1.1-beta.3'
 
     testImplementation "junit:junit:4.12"
+
     implementation project(':base')
     implementation project(':boundWitness')
     implementation project(':schemas')
