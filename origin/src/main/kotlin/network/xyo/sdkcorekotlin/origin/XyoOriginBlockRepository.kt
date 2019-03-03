@@ -9,7 +9,7 @@ import network.xyo.sdkobjectmodelkotlin.buffer.XyoBuff
 
 interface XyoOriginBlockRepository : XyoGetOriginBlockByHash {
     /**
-     * Removes an origin block from the navigator and from persist
+     * Removes an origin block from the navigator and from repositories
      *
      * @param originBlockHash the hash of the origin block to be removed.
      * @return A deferred XyoError, if the error is null, the operation was successful.
@@ -19,7 +19,7 @@ interface XyoOriginBlockRepository : XyoGetOriginBlockByHash {
     fun removeOriginBlock (originBlockHash : XyoBuff) : Deferred<Unit>
 
     /**
-     * Checks if an origin blocks exists in persist.
+     * Checks if an origin blocks exists in repositories.
      *
      * @param originBlockHash the hash of the origin block to check.
      * @return A deferred Boolean
@@ -29,7 +29,7 @@ interface XyoOriginBlockRepository : XyoGetOriginBlockByHash {
     fun containsOriginBlock (originBlockHash: XyoBuff) : Deferred<Boolean?>
 
     /**
-     * Gets all of the origin blocks in persist.
+     * Gets all of the origin blocks in repositories.
      *
      * @return A deferred Array<ByteArray>
      * @throws XyoStorageException if there is an error reading.

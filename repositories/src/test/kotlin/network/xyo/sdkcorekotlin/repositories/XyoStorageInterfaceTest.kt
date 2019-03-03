@@ -1,7 +1,10 @@
-package network.xyo.sdkcorekotlin.persist
+package network.xyo.sdkcorekotlin.repositories
 
 import kotlinx.coroutines.runBlocking
 import network.xyo.sdkcorekotlin.XyoTestBase
+import network.xyo.sdkcorekotlin.repositories.store.XyoInMemoryStorageProvider
+import network.xyo.sdkcorekotlin.repositories.store.XyoStorageProviderInterface
+import network.xyo.sdkcorekotlin.repositories.store.XyoWeakReferenceCaching
 import org.junit.Assert
 import org.junit.Test
 

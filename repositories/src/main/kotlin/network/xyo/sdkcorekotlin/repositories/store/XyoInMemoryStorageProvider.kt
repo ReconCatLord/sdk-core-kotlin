@@ -1,11 +1,11 @@
-package network.xyo.sdkcorekotlin.persist
+package network.xyo.sdkcorekotlin.repositories.store
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import java.util.concurrent.ConcurrentHashMap
 
 /**
- * A simple in-memory persist implementation of the XyoStorageProviderInterface.
+ * A simple in-memory repositories implementation of the XyoStorageProviderInterface.
  */
 class XyoInMemoryStorageProvider : XyoStorageProviderInterface {
     private val keys = ArrayList<ByteArray>()

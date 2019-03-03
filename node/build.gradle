@@ -10,7 +10,7 @@ dependencies {
     implementation project(':schemas')
     implementation project(':crypto')
     implementation project(':hashing')
-    implementation project(':persist')
+    implementation project(':repositories')
 
     testImplementation project(':testHelpers')
 }

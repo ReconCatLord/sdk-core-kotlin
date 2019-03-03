@@ -14,8 +14,8 @@ import network.xyo.sdkobjectmodelkotlin.objects.XyoIterableObject
 /**
  * This class is used as a bucket to store origin blocks, and find links between them.
  *
- * @property storageProvider The persist provider to use when writing encoded origin blocks
- * to persist.
+ * @property storageProvider The repositories provider to use when writing encoded origin blocks
+ * to repositories.
  * @property hashingObject The hashing provider object to hash origin blocks when storing.
  */
 open class XyoStorageOriginBlockRepository(protected val storageProvider: XyoStorageProviderInterface,

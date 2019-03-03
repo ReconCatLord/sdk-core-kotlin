@@ -1,4 +1,4 @@
-package network.xyo.sdkcorekotlin.persist
+package network.xyo.sdkcorekotlin.repositories
 
 import kotlinx.coroutines.runBlocking
 import network.xyo.sdkcorekotlin.XyoTestBase
